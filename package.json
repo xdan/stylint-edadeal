@@ -1,5 +1,5 @@
 {
-  "name": "stylint",
+  "name": "stylint-edadeal",
   "version": "1.5.9",
   "description": "A linter for stylus",
   "author": "Ross Patton",
@@ -52,6 +52,7 @@
     "path-is-absolute": "1.0.0",
     "stampit": "1.2.0",
     "strip-json-comments": "2.0.1",
+    "stylint-json-reporter": "^0.3.1",
     "user-home": "2.0.0",
     "yargs": "4.7.1"
   },

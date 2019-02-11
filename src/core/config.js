@@ -39,7 +39,7 @@ var config = {
 	// how many spaces should we prefer when indenting, pass in false if hard tabs
 	indentPref: false,
 	// enforce or disallow leading zeroes
-	leadingZero: 'never',
+	leadingZero: 'always',
 	// exit if over error limit
 	maxErrors: false,
 	// exit if over warning limit
@@ -47,7 +47,7 @@ var config = {
 	// check for mixed spaces and tabs
 	mixed: false,
 	// lowercase-dash, camelCase, lowercase_underscore, BEM or false (dont check)
-	namingConvention: false,
+	namingConvention: 'camelCase',
 	// if true, then check classes and ids, if false just check variables
 	namingConventionStrict: false,
 	// check for use of border none or outline none, prefer 0
@@ -61,13 +61,101 @@ var config = {
 	// check for $ when declaring vars (doesnt check use)
 	prefixVarsWithDollar: 'always',
 	// single or double quotes, or false to not check
-	quotePref: false,
+	quotePref: 'single',
 	// default reporter
 	reporter: '../core/reporter',
 	// disallow or enforce semicolons
 	semicolons: 'never',
 	// alphabetical, grouped, Array<String> or false (no check)
-	sortOrder: 'alphabetical',
+	sortOrder: [
+		'position',
+		'z-index',
+		'top',
+		'right',
+		'bottom',
+		'left',
+
+		'width',
+		'height',
+		'display',
+		'flex',
+		'flex-direction',
+		'justify-content',
+		'vertical-align',
+		'box-sizing',
+		'content',
+
+		'pointer-events',
+		'overflow',
+		'overflow-x',
+
+		'overflow-y',
+		'visibility',
+		'opacity',
+		'float',
+
+		'max-width',
+		'min-width',
+		'max-height',
+		'min-height',
+
+		'margin',
+		'margin-top',
+		'margin-right',
+		'margin-bottom',
+		'margin-left',
+		'padding',
+		'padding-top',
+		'padding-right',
+		'padding-bottom',
+		'padding-left',
+
+		'font',
+		'font-family',
+		'font-size',
+		'font-style',
+		'font-weight',
+		'font-stretch',
+		'line-height',
+		'letter-spacing',
+		'text-align',
+		'text-indent',
+		'text-transform',
+		'text-decoration',
+		'text-shadow',
+		'text-overflow',
+
+		'border',
+		'border-top',
+		'border-right',
+		'border-bottom',
+		'border-left',
+		'border-width',
+		'border-style',
+		'border-color',
+		'border-spacing',
+		'border-collapse',
+		'border-radius',
+
+		'background',
+		'background-color',
+		'background-image',
+		'background-size',
+		'background-repeat',
+		'clip',
+		'list-style',
+		'color',
+
+		'whitespace',
+		'outline',
+		'cursor',
+		'box-shadow',
+		'backface-visibility',
+		'will-change',
+		'transition',
+		'transform',
+		'animation'
+	],
 	// no one liners
 	stackedProperties: 'never',
 	// check for trailing whitespace
